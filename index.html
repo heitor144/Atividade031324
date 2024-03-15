@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+
+    <title>Introdução Bootstrap</title>
+</head>
+
+<body class="body-back">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo_navbar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Avaliações</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Digite o que procura..." aria-label="Search">
+                <button type="button" class="btn btn-outline-info">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <header id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="true"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/img-nav2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/img-nav1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/img-nav3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <figure>
+        <blockquote class="blockquote">
+            <h3 class="fw-lighter text-center mb-5 mt-5">Deixe-se envolver pela beleza serena de praias
+                deslumbrantes, paisagens exuberantes e serviços de classe mundial. Em nossos destinos paradisíacos, as
+                preocupações se dissolvem e os sonhos se realizam. Venha explorar e criar memórias inesquecíveis em
+                nossos resorts.</h3>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+            Harmonia Haven by<cite title="Source Title">
+                Heavenly Journey Magazine</cite>
+        </figcaption>
+    </figure>
+
+    <section class="cards">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://conteudo.imguol.com.br/c/entretenimento/c4/2022/05/30/salinas-maragogi-all-inclusive-resort-1653917818990_v2_3x4.jpg"
+                        class="img-fluid rounded-start" alt="placa coffee">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Salinas Maragogi Resort</h5>
+                        <p class="card-text">Descubra o paraíso em Salinas Maragogi.
+                            All-inclusive de luxo à beira-mar.
+                            Viva momentos inesquecíveis neste refúgio tropical.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://www.carpemundi.com.br/wp-content/uploads/2020/07/carmel-charme-resort.jpg"
+                        class="img-fluid rounded-start" alt="servindo café">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Carmel Charme Resort</h5>
+                        <p class="card-text">Encante-se no Carmel Charme Resort,
+                            Onde luxo e tranquilidade se encontram à beira-mar.
+                            Desfrute de uma experiência memorável neste refúgio de elegância tropical.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="nacional-tab" data-bs-toggle="tab"
+                    data-bs-target="#nacional-tab-pane" type="button" role="tab" aria-controls="nacional-tab-pane"
+                    aria-selected="true">Nacionais</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="internacionais-tab" data-bs-toggle="tab"
+                    data-bs-target="#internacionais-tab-pane" type="button" role="tab"
+                    aria-controls="internacionais-tab-pane" aria-selected="false">Internacionais</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="nacional-tab-pane" role="tabpanel" aria-labelledby="nacional-tab"
+                tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2020/01/estrutura_03.jpg?quality=70&strip=info&w=720&crop=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Resort Costa Brasilis - BA</h5>
+                                <p class="card-text">Localizado em uma praia paradisíaca da Bahia, o Resort Costa
+                                    Brasilis oferece luxo e conforto em meio à natureza exuberante. Com uma ampla gama
+                                    de atividades aquáticas e terrestres, além de restaurantes gourmet, é o destino
+                                    ideal para quem busca relaxamento e aventura à beira-mar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/04/resort-brasil-salinas-maragogi1-1.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Salinas Maragogi - AL</h5>
+                                <p class="card-text">As Salinas de Maragogi, em Alagoas, Brasil, são um espetáculo
+                                    natural de águas cristalinas e sal branco reluzente. Rodeadas por manguezais,
+                                    oferecem uma paisagem deslumbrante e são um importante ponto turístico da região.
+                                    Suas águas azul-turquesa atraem visitantes em busca de beleza e tranquilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://blogmaladeviagem.com.br/wp-content/uploads/2020/08/resort-brasil-lista-melhores.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nannai Resort & Spa - PE</h5>
+                                <p class="card-text">Situado em uma das praias mais belas do nordeste brasileiro, o
+                                    Nannai Resort & Spa combina elegância e tranquilidade em um cenário deslumbrante.
+                                    Com piscinas privativas em cada suíte, spa de classe mundial e culinária regional
+                                    refinada, proporciona uma experiência de luxo e bem-estar incomparável.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://viajandocomamalarosa.com.br/wp-content/uploads/2020/05/Ocean-Palace.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Txai Resort Itacaré - BA</h5>
+                                <p class="card-text">Aninhado entre coqueirais e o mar cristalino da Bahia, o Txai
+                                    Resort Itacaré é um refúgio de charme e sofisticação. Com uma proposta eco-chic,
+                                    oferece acomodações exclusivas, gastronomia de alta qualidade e uma variedade de
+                                    atividades ao ar livre, proporcionando uma conexão única com a natureza.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/f2/69/4b/ocean-palace-beach-resort.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Carmel Charme Resort - CE</h5>
+                                <p class="card-text"> Localizado em uma praia intocada do Ceará, o Carmel Charme Resort
+                                    combina elegância e serenidade em um ambiente luxuoso. Com suítes espaçosas,
+                                    gastronomia requintada e uma equipe atenciosa, proporciona uma experiência
+                                    inesquecível de relaxamento e conforto à beira-mar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-menu">
+                            <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2022/12/transamerica-comandatuba-resort-capa-2023-2-820x430.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ponta dos Ganchos Resort - SC</h5>
+                                <p class="card-text">Situado em uma península privativa com vista para o mar de Santa
+                                    Catarina, o Ponta dos Ganchos Resort é um refúgio exclusivo para casais em busca de
+                                    privacidade e romance. Com suítes luxuosas, gastronomia premiada e uma variedade de
+                                    atividades românticas, é o destino perfeito para uma escapada a dois.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="internacionais-tab-pane" role="tabpanel" aria-labelledby="internacionais-tab"
+                tabindex="0">
+                <div class="tab-pane fade show active" id="nacional-tab-pane" role="tabpanel"
+                    aria-labelledby="nacional-tab" tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://melhoresmomentosdavida.com/wp-content/uploads/2022/07/melhores-resorts-all-inclusive-do-mundo.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Serenity Sands Resort - Maldivas</h5>
+                                    <p class="card-text">Situado em uma ilha paradisíaca nas Maldivas, o Serenity Sands
+                                        Resort oferece luxo e exclusividade à beira-mar. Com vilas privativas sobre as
+                                        águas cristalinas, spa de classe mundial e uma variedade de atividades
+                                        aquáticas, é o refúgio perfeito para quem busca tranquilidade e romance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://pezinhosmundoafora.com.br/wp-content/uploads/2019/08/mavsa-resort-all-inclusive-sp1.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Azure Bay Resort - Ilhas Fiji</h5>
+                                    <p class="card-text">Aninhado entre palmeiras e praias de areia branca nas Ilhas
+                                        Fiji, o Azure Bay Resort é um oásis tropical de beleza e serenidade. Com suítes
+                                        espaçosas, gastronomia gourmet e uma ampla oferta de esportes aquáticos,
+                                        proporciona uma experiência inesquecível em um dos destinos mais exóticos do
+                                        mundo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://turisnews.com.br/wp-content/uploads/2023/09/Resorts-Brasil.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Turtle Cove Retreat - Tailândia</h5>
+                                    <p class="card-text"> Localizado em uma enseada tranquila da Tailândia, o Turtle
+                                        Cove Retreat é um santuário de luxo cercado por paisagens deslumbrantes. Com
+                                        vilas privativas com piscinas de borda infinita, restaurantes à beira-mar e uma
+                                        variedade de atividades de lazer, oferece uma experiência de férias relaxante e
+                                        memorável.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://conteudo.imguol.com.br/c/entretenimento/19/2020/06/11/resort-egito-1591906972523_v2_900x506.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bora Bora Bliss Resort - Polinésia Francesa</h5>
+                                    <p class="card-text">Situado em uma das ilhas mais icônicas da Polinésia Francesa, o
+                                        Bora Bora Bliss Resort é um paraíso de luxo e romance. Com bangalôs sobre as
+                                        águas cristalinas, restaurantes gourmet e serviços de spa exclusivos,
+                                        proporciona uma experiência única em um cenário de tirar o fôlego.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://muitaviagem.com.br/wp-content/uploads/2016/01/melhores-resorts-nordeste-bahia-costa-do-sauipe.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caribbean Cove Resort - Jamaica</h5>
+                                    <p class="card-text">Aninhado entre palmeiras e praias de areia dourada na Jamaica,
+                                        o Caribbean Cove Resort é um destino tropical de classe mundial. Com suítes
+                                        elegantes, restaurantes à beira-mar e uma variedade de atividades recreativas, é
+                                        o local ideal para desfrutar do sol, mar e diversão caribenha.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://e4vwvaermbj.exactdn.com/wp-content/uploads/2020/03/Baoase-Luxury-Resort-Curac%CC%A7ao-1.jpg?strip=all&lossy=1&w=2560&ssl=1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Golden Sands Retreat - Ilhas Seychelles</h5>
+                                    <p class="card-text">Situado em uma enseada privativa nas Ilhas Seychelles, o Golden
+                                        Sands Retreat é um refúgio de luxo em meio ao Oceano Índico. Com vilas espaçosas
+                                        à beira-mar, culinária gourmet e uma ampla gama de atividades aquáticas, oferece
+                                        uma experiência exclusiva de relaxamento e beleza natural.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="local" class="container text-center mt-5 mb-5">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Fale conosco!
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Olá, como posso ajudar?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Se você se interessou por um de nossos pacotes, fale agora mesmo com
+                        nossos atendentes que irão lhe atender prontamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Clique aqui!</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="text-center">
+        <img width="50px" src="img/logo.png" alt="logo">
+        <span class="mt-2 mb-2 fw-bold">
+            ResortFinder Brasil | Nosso Resort, seu paraíso
+        </span>
+        <span>
+            11 9 1234-5678
+        </span>
+        <a href="https://wa.me/5532988301099"><img class="whatsapp-fixed"
+                src="https://cdn.icon-icons.com/icons2/4048/PNG/512/whatsapp_logo_icon_257004.png" alt="whatsapp"></a>
+
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
